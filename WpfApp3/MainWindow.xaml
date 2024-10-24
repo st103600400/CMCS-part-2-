@@ -1,0 +1,24 @@
+﻿<Window x:Class="CMCS.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Contract Monthly Claim System" Height="300" Width="400">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Text="Contract Monthly Claim System" FontSize="18" Margin="0,0,0,20" HorizontalAlignment="Center"/>
+            <StackPanel>
+                <TextBlock Text="Username" Margin="0,0,0,5"/>
+                <TextBox Name="UsernameTextBox" Width="200" Margin="0,0,0,10"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Text="Password" Margin="0,0,0,5"/>
+                <PasswordBox Name="PasswordBox" Width="200" Margin="0,0,0,20"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <RadioButton Name="LecturerRadioButton" Content="Lecturer" Margin="5"/>
+                <RadioButton Name="CoordinatorRadioButton" Content="Programme Coordinator" Margin="5"/>
+                <RadioButton Name="ManagerRadioButton" Content="Academic Manager" Margin="5"/>
+            </StackPanel>
+            <Button Content="Login" Width="200" Click="LoginButton_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
